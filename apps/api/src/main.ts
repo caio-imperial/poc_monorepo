@@ -7,6 +7,12 @@ async function bootstrap() {
     origin: process.env.CORS_ORIGIN,
     methods: process.env.CORS_METHODS,
   });
-  await app.listen(process.env.PORT ?? 3004);
+  await app.listen(process.env.PORT ?? 3004).catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });
 }
-bootstrap();
+bootstrap().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});

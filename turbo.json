@@ -28,9 +28,19 @@
                 "^lint"
             ]
         },
-        "check-types": {
+        "lint:fix": {
             "dependsOn": [
-                "^check-types"
+                "^lint:fix"
+            ]
+        },
+        "format": {
+            "dependsOn": [
+                "^format"
+            ]
+        },
+        "format:fix": {
+            "dependsOn": [
+                "^format:fix"
             ]
         },
         "dev": {

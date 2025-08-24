@@ -6,9 +6,9 @@ export class AppService {
   getTasks(): Task[] {
     return [
       {
-        id: "1",
-        title: "Task 1",
-        description: "Task 1 description",
+        id: '1',
+        title: 'Task 1',
+        description: 'Task 1 description',
         completed: false,
       },
     ];

@@ -10,7 +10,11 @@
   ],
   "scripts": {
     "build": "tsc -b",
-    "dev": "tsc -b -w"
+    "dev": "tsc -b -w",
+    "lint": "eslint \"src/**/*.tsx\"",
+    "lint:fix": "eslint \"src/**/*.tsx\" --fix",
+    "format": "prettier --write \"src/**/*.tsx\"",
+    "format:fix": "prettier --write \"src/**/*.tsx\" --fix"
   },
   "keywords": [],
   "author": "",

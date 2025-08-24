@@ -7,6 +7,9 @@
     "dev": "turbo run dev",
     "build": "turbo run build",
     "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "format": "turbo run format",
+    "format:fix": "turbo run format:fix",
     "test": "turbo run test",
     "clean": "node scripts/clean.js"
   },
@@ -15,6 +18,17 @@
   "license": "ISC",
   "packageManager": "pnpm@10.8.1",
   "devDependencies": {
-    "turbo": "^2.5.6"
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.18.0",
+    "@typescript-eslint/eslint-plugin": "^8.40.0",
+    "@typescript-eslint/parser": "^8.40.0",
+    "eslint": "^9.34.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-prettier": "^5.2.2",
+    "globals": "^16.0.0",
+    "prettier": "^3.6.2",
+    "turbo": "^2.5.6",
+    "typescript-eslint": "^8.20.0"
   }
 }
